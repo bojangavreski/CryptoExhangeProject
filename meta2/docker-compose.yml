@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  metaexchangeapiv2:
+    image: ${DOCKER_REGISTRY-}metaexchangeapiv2
+    build:
+      context: .
+      dockerfile: MetaExchangeAPIv2/Dockerfile
